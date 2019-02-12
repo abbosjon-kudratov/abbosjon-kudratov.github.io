@@ -21,6 +21,21 @@ a:hover{
 
 }
 
+
+#classes{
+
+	width: 400px;
+	min-width: 300px;
+	float: left;
+
+}
+#movies{
+
+	width:  400px; 
+	float: right;
+
+}
+
 a{
 	text-decoration: none;
 	cursor: pointer;
@@ -36,11 +51,14 @@ div#main-wrapper{
 	width: 80%;
 	padding: 5px;
 	margin: 5px ;
-	
-	max-width: 600px;
+	overflow: hidden;
+	max-width: 800px;
 	min-width: 550px;
 }
 
+div#photos{
+	display: inline;
+}
 div#wrapper1{
 	background-color: #eee;
 	width: 50%;
@@ -50,6 +68,7 @@ div#wrapper1{
 	min-width: 550px;
 
 }
+
 
 
 h1#page-header{
@@ -69,13 +88,16 @@ div.btn:hover{
 	opacity: 0.5; 
 }
 
-div#social-media{
+div.social-media{
 	text-align: center;	 
+	position:  absolute;
+	top: 50%;
 }
 
-div#social-media a{
+div.social-media a{
 	text-decoration: none;
 	color: #000;
+	position: 
 }
 
 img#header-image{
@@ -88,3 +110,26 @@ div#footer-text{
 	font-size: 0.5em;
 	margin-bottom: 15px;
 }
+
+
+img.photos{
+	width: 200px;
+	height: 200px;
+
+	* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+
