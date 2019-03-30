@@ -1,135 +1,106 @@
 /*normalize */
-
 html, body{
-	margin: 5px;
-	padding: 5px;
+margin: 5px;
+padding: 5px;
 }
 
 body{
-	background-image: url(images/background.gif);
-	font-weight: 100;
+background-image: url(images/background.gif);
+font-weight: 100;
 }
 
-h1,
-h2,
-h3{
 
-}
 
 a:hover{
-	opacity: 0.7;
-
+opacity: 0.7;
 }
 
+div#main{
+box-sizing: border-box;
 
+display: flex;
+flex-flow: column wrap;
+justify-content: flex-start;
+align-items: flex-start;
+align-content: stretch;
+padding: 5px auto;
+}
 #classes{
-
-	width: 400px;
-	min-width: 300px;
-	float: left;
-
+width: 400px;
+min-width: 300px;
+float: left;
 }
 #movies{
-
-	width:  400px; 
-	float: right;
-
+width:  400px;
+float: right;
 }
-
 a{
-	text-decoration: none;
-	cursor: pointer;
+text-decoration: none;
+cursor: pointer;
 }
-
 h2#aboutme{
-	color: blue;
+color: blue;
 }
-
+}
+div#sidebar{
+box-sizing: border-box;
+width: 10%;
+height: 100%;
+order: 1;
+padding: 10px auto;
+}
 /*app */
-div#main-wrapper{
-	background-color: rgba(1,1,1,0.2);
-	width: 80%;
-	padding: 5px;
-	margin: 5px ;
-	overflow: hidden;
-	max-width: 800px;
-	min-width: 550px;
-}
-
 div#photos{
-	display: inline;
+display: inline;
 }
 div#wrapper1{
-	background-color: #eee;
-	width: 50%;
-	padding: 5px;
-	margin: 25px auto;
-	max-width: 800px;
-	min-width: 550px;
 
 }
 
-
-
-h1#page-header{
-	margin: 15px 0px;
-	text-align: center;
-	font-family: 'Merriweather', serif;
-}
 div.btn{
-	display: inline-block; 
-	background-color: #eee;
-	padding: 2.5px 5px;
-	border-radius: 8px;
-	cursor: pointer;
+display: inline-block;
+background-color: #eee;
+padding: 2.5px 5px;
+border-radius: 8px;
+cursor: pointer;
 }
-
 div.btn:hover{
-	opacity: 0.5; 
+opacity: 0.5;
 }
-
 div.social-media{
-	text-align: center;	 
-	position:  absolute;
-	top: 50%;
+text-align: center;
+position:  absolute;
+top: 50%;
+padding: 10px auto;
 }
-
 div.social-media a{
-	text-decoration: none;
-	color: #000;
-	position: 
+text-decoration: none;
+color: #000;
+position:
 }
-
 img#header-image{
-	margin: 15px auto;
-	display: block;
+margin: 15px auto;
+display: block;
 }
-
 div#footer-text{
-	text-align: center;
-	font-size: 0.5em;
-	margin-bottom: 15px;
+text-align: center;
+font-size: 0.5em;
+margin-bottom: 15px;
 }
-
-
 img.photos{
-	width: 200px;
-	height: 200px;
-
-	* {
-  box-sizing: border-box;
+width: 200px;
+height: 200px;
+* {
+box-sizing: border-box;
 }
-
 .box {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
+float: left;
+width: 33.33%;
+padding: 50px;
 }
-
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+content: "";
+clear: both;
+display: table;
 }
 }
-
