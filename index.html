@@ -1,132 +1,167 @@
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>About Me</title>
-		<link rel="stylesheet" href="w3.css">
+		<!-- <link rel="stylesheet" href="w3.css"> -->
 		<link rel="stylesheet" href="style.css">
 		<!-- Latest compiled and minified CSS -->
-		<!-- for bootstrap 3 -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		
+		<!-- for bootstrap 4 -->
+		<!-- <link rel="stylesheet" href="bootstrap.css"  crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<ul class="w3-navbar w3-black">
-				<li class="navig"><a href="javascript:void(0)">Home</a></li>
-				<li class="navig"><a href="javascript:void(0)">Classes</a></li>
-				<li class="navig"><a href="javascript:void(0)">Movies</a></li>
-				<li class="navig"><a href="javascript:void(0)">Activities</a></li>
-				<li class="dropdown navig"><a href="javascript:void(0)">Find me on Social Media</a>
-				<div class="dropdown-content">
-					<a href="https://facebook.com/abbosjon.kudratov" target="_blank">Facebook (<text class="smedia"> @abbosjon.kudratov</text>)</a>
-					<a href="https://instagram.com/abbosjon_kudratov" target="_blank">Instagram (<text class="smedia">@abbosjon_kudratov</text>)</a>
-					
-				</div>
-			</li>
-		</ul>
-	</nav>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">AK Gallery</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
 
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Classes</a>
+					</li>
 
-	<div id="main" class="container">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Activities</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							About
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">About us</a>
+							
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item nav-link disabled" href="#">Find Us on Social media & Github</a>
+							<a class="dropdown-item fa fa-facebook" href="#"> abbosjon.kudratov</a>
+
+							<a class="dropdown-item fa fa-instagram" href="#"> abbosjon_kudratov</a>
+							<a class="dropdown-item fa fa-github" href="#"> abbosjon-kudratov</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">The AK Gallery. It's more than just a service</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" >
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+		<!-- <h1>Bootsrap Body</h1> -->
+	
+	<div  class="container">
 		
 		<!-- Navigation -->
 		
 		<!-- Band Description -->
-		<section class="w3-container w3-center w3-content" style="max-width:600px">
+		<section >
 			<h1>The AK Gallery</h1>
-			<p class="w3-opacity"><i>We love photography & Computer Science</i></p>
+			<p><i>We love photography & Computer Science</i></p>
 		</section>
-		<div id="wrapper1">
+		
+		
+		<div id="header">
+			<button class="tablink" onclick="showInfo('aboutme', this, 'red')" id="defaultOpen">About Me</button>
+			<button class="tablink" onclick="showInfo('classes', this, 'green')">Classes</button>
+			<button class="tablink" onclick="showInfo('movies', this, 'blue')">Movies</button>
+			<button class="tablink" onclick="showInfo('activities', this, 'orange')">Activities</button>
+			<button  class="tablink">SocialMedia
 			
-			
-			<div id="header">
-				<button class="tablink" onclick="showInfo('aboutme', this, 'red')" id="defaultOpen">About Me</button>
-				<button class="tablink" onclick="showInfo('classes', this, 'green')">Classes</button>
-				<button class="tablink" onclick="showInfo('movies', this, 'blue')">Movies</button>
-				<button class="tablink" onclick="showInfo('activities', this, 'orange')">Activities</button>
-				<button  class="tablink">SocialMedia
-				
-				</button>
-			</div>
-			<div id="aboutme" class="tabcontent">
-				<h2 >About Me : Abbosjon Kudratov</h2>
-				<p>Hi, I'm Abbosjon. People call me AK.<br/>
-				I'm a junior student at Inha University in Tashkent. I am a <strong>funny</strong> and sometimes very <strong>not funny</strong> person</p>
-				<hr />
-			</div>
-			<div id="classes" class="tabcontent">
-				<h4>My Classes this semester:</h4>
-				<ol>
-					<li>Internet Programming</li>
-					<li>Signals & System</li>
-					<li>Probability & Statistics</li>
-					<li>Computer Networks</li>
-					<li>UNIX Programming</li>
-					<li>Database & Application Design</li>
-				</ol>
-			</div>
-			
-			<div id="movies" class="tabcontent">
-				<h4>Some of my favorite movies:</h4>
-				<ul>
-					<li>House M.D. <a href="https://www.imdb.com/title/tt0412142/">(IMDB)</a></li>
-					<li>Prision Break <a href="https://www.imdb.com/title/tt0455275/">(IMDB)</a></li>
-					<li>Harry Potter <a href="https://www.imdb.com/title/tt0241527/">(IMDB)</a></li>
-					<li>The Big Bang Theory <a href="https://www.imdb.com/title/tt0898266">(IMDB)</a></li>
-				</ul>
-			</div>
-			<div id="activities" class="tabcontent">
-				<h4>Some of my favorite activities/languages:</h4>
-				<ul>
-					<li>Learning Photoshop <a href="https://www.imdb.com/title/tt0412142/">(CC2018)</a></li>
-					<li>Learn Korean language by watching <a href="https://www.imdb.com/title/tt0455275/"> K-movies</a></li>
-					<li>Reading Harry Potter <a href="https://www.imdb.com/title/tt0241527/"> books</a></li>
-					<li>Transifex Translation and  <a href="https://www.imdb.com/title/tt0898266"> Google Local Guides</a> projects</li>
-				</ul>
-			</div>
-			
-			
+			</button>
 		</div>
+		<div id="aboutme" class="tabcontent">
+			<h2 >About Me : Abbosjon Kudratov</h2>
+			<p>Hi, I'm Abbosjon. People call me AK.<br/>
+			I'm a junior student at Inha University in Tashkent. I am a <strong>funny</strong> and sometimes very <strong>not funny</strong> person</p>
+			<hr />
+		</div>
+		<div id="classes" class="tabcontent">
+			<h4>My Classes this semester:</h4>
+			<ol>
+				<li>Internet Programming</li>
+				<li>Signals & System</li>
+				<li>Probability & Statistics</li>
+				<li>Computer Networks</li>
+				<li>UNIX Programming</li>
+				<li>Database & Application Design</li>
+			</ol>
+		</div>
+		
+		<div id="movies" class="tabcontent">
+			<h4>Some of my favorite movies:</h4>
+			<ul>
+				<li>House M.D. <a href="https://www.imdb.com/title/tt0412142/">(IMDB)</a></li>
+				<li>Prision Break <a href="https://www.imdb.com/title/tt0455275/">(IMDB)</a></li>
+				<li>Harry Potter <a href="https://www.imdb.com/title/tt0241527/">(IMDB)</a></li>
+				<li>The Big Bang Theory <a href="https://www.imdb.com/title/tt0898266">(IMDB)</a></li>
+			</ul>
+		</div>
+		<div id="activities" class="tabcontent">
+			<h4>Some of my favorite activities/languages:</h4>
+			<ul>
+				<li>Learning Photoshop <a href="https://www.imdb.com/title/tt0412142/">(CC2018)</a></li>
+				<li>Learn Korean language by watching <a href="https://www.imdb.com/title/tt0455275/"> K-movies</a></li>
+				<li>Reading Harry Potter <a href="https://www.imdb.com/title/tt0241527/"> books</a></li>
+				<li>Transifex Translation and  <a href="https://www.imdb.com/title/tt0898266"> Google Local Guides</a> projects</li>
+			</ul>
+		</div>
+		
+		
+		
 		
 	</div>
 	
-</div>
-</div>
-<div id="sidebar" class="content">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-<hr>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-<hr>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-<hr>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
-<hr>
-<br>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quo ipsa maxime nesciunt reprehenderit nemo quod dolorum odit, in architecto reiciendis vitae provident fugit error quia delectus nulla porro odio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum, autem quidem accusamus dignissimos et facere earum dolorum. Ut voluptates, corrupti distinctio esse facilis expedita voluptate possimus a aut vitae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quod nemo debitis excepturi aspernatur ipsum, itaque est optio iusto ea molestias error neque distinctio cum consequuntur. Aperiam explicabo corrupti, unde.
-<br>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aut eveniet, assumenda nam aliquam temporibus voluptatem praesentium, doloribus quisquam deserunt modi esse quam minus! Molestiae, dolorem cupiditate beatae commodi officiis.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam adipisci fuga voluptatum, reprehenderit perferendis quis quisquam nisi quaerat. Assumenda provident eveniet, numquam atque, vitae aperiam blanditiis dolorum tempora praesentium! Rem!
-<hr>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae mollitia sunt ipsam error vero modi. Libero repudiandae laboriosam explicabo dignissimos, est ex, hic officia repellat sequi accusantium, fugit harum.
-</div>
-<div id="socialmedia" >
-<a href="https://www.facebook.com/abbosjon.kudratov" target="_blank"><div class="btn">Facebook</div> </a>
-<a href="https://twitter.com/a_kudratov" target="_blank"><div class="btn">Twitter</div>
-</a>
-<a href="https://instagram.com/abbosjon_kudratov" target="_blank"><div class="btn">Instagram</div> </a>
-<a href="https://youtube.com" target="_blank"><div class="btn">YouTube</div>
+	<div id="sidebar" >
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		<hr>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		<hr>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		<hr>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
+		<hr>
+		<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quo ipsa maxime nesciunt reprehenderit nemo quod dolorum odit, in architecto reiciendis vitae provident fugit error quia delectus nulla porro odio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum, autem quidem accusamus dignissimos et facere earum dolorum. Ut voluptates, corrupti distinctio esse facilis expedita voluptate possimus a aut vitae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quod nemo debitis excepturi aspernatur ipsum, itaque est optio iusto ea molestias error neque distinctio cum consequuntur. Aperiam explicabo corrupti, unde.
+		<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aut eveniet, assumenda nam aliquam temporibus voluptatem praesentium, doloribus quisquam deserunt modi esse quam minus! Molestiae, dolorem cupiditate beatae commodi officiis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam adipisci fuga voluptatum, reprehenderit perferendis quis quisquam nisi quaerat. Assumenda provident eveniet, numquam atque, vitae aperiam blanditiis dolorum tempora praesentium! Rem!
+		<hr>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae mollitia sunt ipsam error vero modi. Libero repudiandae laboriosam explicabo dignissimos, est ex, hic officia repellat sequi accusantium, fugit harum.
+	</div>
+	<div id="socialmedia" >
+		<a href="https://www.facebook.com/abbosjon.kudratov" target="_blank"><div class="btn">Facebook</div> </a>
+		<a href="https://twitter.com/a_kudratov" target="_blank"><div class="btn">Twitter</div>
+	</a>
+	<a href="https://instagram.com/abbosjon_kudratov" target="_blank"><div class="btn">Instagram</div> </a>
+	<a href="https://youtube.com" target="_blank"><div class="btn">YouTube</div>
 </a>
 </div>
 <div id="footer-text">&copy 2019 Abbosjon Kudratov
-<a href="https://inha.uz" target="_blank"><img id="iut" src="images/logo2.png" > </a></div>
-<!-- Latest compiled and minified JavaScript -->
-<!-- for bootstrap 3 this script  -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<a href="https://inha.uz" target="_blank"><img id="iut" src="images/logo2.png" > </a>
+</div>
+<!-- Latest compiled and minified JavaScript & JQuery stuff -->
+<!-- for bootstrap 4  this script  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
