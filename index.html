@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>About Me</title>
+		<title>Homepage</title>
 		<!-- <link rel="stylesheet" href="w3.css"> -->
 		<link rel="stylesheet" href="style.css">
 		<!-- Latest compiled and minified CSS -->
@@ -44,7 +44,7 @@
 							<a class="dropdown-item" href="#">About us</a>
 							
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item nav-link disabled" href="#">Find Us on Social media & Github</a>
+							<a class="dropdown-item nav-link disabled" href="#"> Find Us on Social media & Github</a>
 							<a class="dropdown-item fa fa-facebook" href="#"> abbosjon.kudratov</a>
 
 							<a class="dropdown-item fa fa-instagram" href="#"> abbosjon_kudratov</a>
@@ -52,81 +52,38 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">The AK Gallery. It's more than just a service</a>
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">It's more than just a gallery</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" >
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					<input class="form-control mr-sm-2 " type="search" placeholder="Type something" aria-label="Search" >
+					<button class="btn btn-light  my-2 my-sm-0" type="submit">Search</button>
 				</form>
+
+				<ul class="navbar-nav mr-sm-2 ">
+					<li class="nav-item"><a class="nav-link" href="#">LogIn</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">SignUp</a></li>
+				</ul>
 			</div>
 		</nav>
 
 		<!-- <h1>Bootsrap Body</h1> -->
 	
-	<div  class="container">
+	<div id="main" class="container">
 		
 		<!-- Navigation -->
 		
 		<!-- Band Description -->
-		<section >
-			<h1>The AK Gallery</h1>
-			<p><i>We love photography & Computer Science</i></p>
+		<section class=" container jumbotron jumbotron-fluid" style="opacity: 0.7" >
+			<div class="container"> <h1>The AK Gallery</h1>
+			<p><i>We love photography & Computer Science</i></p></div>
+			
 		</section>
 		
 		
-		<div id="header">
-			<button class="tablink" onclick="showInfo('aboutme', this, 'red')" id="defaultOpen">About Me</button>
-			<button class="tablink" onclick="showInfo('classes', this, 'green')">Classes</button>
-			<button class="tablink" onclick="showInfo('movies', this, 'blue')">Movies</button>
-			<button class="tablink" onclick="showInfo('activities', this, 'orange')">Activities</button>
-			<button  class="tablink">SocialMedia
-			
-			</button>
-		</div>
-		<div id="aboutme" class="tabcontent">
-			<h2 >About Me : Abbosjon Kudratov</h2>
-			<p>Hi, I'm Abbosjon. People call me AK.<br/>
-			I'm a junior student at Inha University in Tashkent. I am a <strong>funny</strong> and sometimes very <strong>not funny</strong> person</p>
-			<hr />
-		</div>
-		<div id="classes" class="tabcontent">
-			<h4>My Classes this semester:</h4>
-			<ol>
-				<li>Internet Programming</li>
-				<li>Signals & System</li>
-				<li>Probability & Statistics</li>
-				<li>Computer Networks</li>
-				<li>UNIX Programming</li>
-				<li>Database & Application Design</li>
-			</ol>
-		</div>
 		
-		<div id="movies" class="tabcontent">
-			<h4>Some of my favorite movies:</h4>
-			<ul>
-				<li>House M.D. <a href="https://www.imdb.com/title/tt0412142/">(IMDB)</a></li>
-				<li>Prision Break <a href="https://www.imdb.com/title/tt0455275/">(IMDB)</a></li>
-				<li>Harry Potter <a href="https://www.imdb.com/title/tt0241527/">(IMDB)</a></li>
-				<li>The Big Bang Theory <a href="https://www.imdb.com/title/tt0898266">(IMDB)</a></li>
-			</ul>
-		</div>
-		<div id="activities" class="tabcontent">
-			<h4>Some of my favorite activities/languages:</h4>
-			<ul>
-				<li>Learning Photoshop <a href="https://www.imdb.com/title/tt0412142/">(CC2018)</a></li>
-				<li>Learn Korean language by watching <a href="https://www.imdb.com/title/tt0455275/"> K-movies</a></li>
-				<li>Reading Harry Potter <a href="https://www.imdb.com/title/tt0241527/"> books</a></li>
-				<li>Transifex Translation and  <a href="https://www.imdb.com/title/tt0898266"> Google Local Guides</a> projects</li>
-			</ul>
-		</div>
-		
-		
-		
-		
-	</div>
 	
-	<div id="sidebar" >
+	<div   class="container">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
 		<hr>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates, eaque, quod soluta est saepe iusto incidunt. Ea fugiat labore nostrum perspiciatis eos ad dicta assumenda maxime aspernatur quis! Repellat!
@@ -146,17 +103,21 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam adipisci fuga voluptatum, reprehenderit perferendis quis quisquam nisi quaerat. Assumenda provident eveniet, numquam atque, vitae aperiam blanditiis dolorum tempora praesentium! Rem!
 		<hr>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae mollitia sunt ipsam error vero modi. Libero repudiandae laboriosam explicabo dignissimos, est ex, hic officia repellat sequi accusantium, fugit harum.
+
 	</div>
+
 	<div id="socialmedia" >
 		<a href="https://www.facebook.com/abbosjon.kudratov" target="_blank"><div class="btn">Facebook</div> </a>
 		<a href="https://twitter.com/a_kudratov" target="_blank"><div class="btn">Twitter</div>
 	</a>
 	<a href="https://instagram.com/abbosjon_kudratov" target="_blank"><div class="btn">Instagram</div> </a>
 	<a href="https://youtube.com" target="_blank"><div class="btn">YouTube</div>
-</a>
-</div>
-<div id="footer-text">&copy 2019 Abbosjon Kudratov
-<a href="https://inha.uz" target="_blank"><img id="iut" src="images/logo2.png" > </a>
+	</a>
+
+	</div>
+
+<div class="container footer">
+	<p>&copy 2019 Abbosjon Kudratov </p>
 </div>
 <!-- Latest compiled and minified JavaScript & JQuery stuff -->
 <!-- for bootstrap 4  this script  -->
